@@ -1,0 +1,14 @@
+!<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ title }}</title>
+        {% comment %} <link rel="stylesheet" href="{{ url_for('static' , filename='main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static' , filename='master.css') }}"> {% endcomment %}
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+    </html>
